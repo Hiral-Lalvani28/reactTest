@@ -1,0 +1,21 @@
+.main-wrap {
+  width: fit-content;
+  margin: 0 auto;
+  .title-txt {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+  }
+  .cards-wrap {
+    display: grid;
+    gap: 2rem;
+    @media screen and (min-width: 850px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+    @media screen and (min-width: 1600px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem;
+    }
+  }
+}
